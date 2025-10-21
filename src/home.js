@@ -19,8 +19,8 @@ function renderAbout () {
     const aboutHeader = document.createElement("h3");
     const description = document.createElement("p");
 
-    aboutContainer.className = "container about";
-    aboutHeader.className = "header about";
+    aboutContainer.className = "aboutContainer";
+    aboutHeader.className = "aboutHeader";
     description.className = "description";
 
     aboutHeader.textContent = "About"
@@ -30,6 +30,25 @@ function renderAbout () {
     aboutContainer.appendChild(description);
 
     return aboutContainer;
+}
+
+// Create a function to create DOM elements for restaurant's open time information
+function renderOpenTime() {
+    const openTimeContainer = document.createElement("div");
+    const openTimeHeader = document.createElement("h3");
+    const timeInfo = document.createElement("p");
+
+    openTimeContainer.className = "openTimeContainer";
+    openTimeHeader.className = "openTimeHeader";
+    timeInfo.className = "timeInfo";
+
+    openTimeHeader.textContent = "Open At: ";
+    timeInfo.className = "Tuesday - Sunday: 10AM - 10PM";
+
+    openTimeContainer.appendChild(openTimeHeader);
+    openTimeContainer.appendChild(timeInfo);
+
+    return openTimeContainer;
 }
 
 
