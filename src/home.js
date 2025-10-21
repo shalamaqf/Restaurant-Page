@@ -42,7 +42,7 @@ function renderOpenTime() {
     openTimeHeader.className = "header openTime";
     timeInfo.className = "timeInfo";
 
-    openTimeHeader.textContent = "Open At: ";
+    openTimeHeader.textContent = "Open At";
     timeInfo.textContent = "Tuesday - Sunday: 10AM - 10PM";
 
     openTimeContainer.appendChild(openTimeHeader);
@@ -61,7 +61,7 @@ function renderLocation() {
     locationHeader.className = "header location";
     location.className = "location";
 
-    locationHeader.textContent = "Location: ";
+    locationHeader.textContent = "Location";
     location.textContent = "5 Chome-17-3 Shimokitazawa, Setagaya City, Tokyo 155-0031, Japan";
 
     locationContainer.appendChild(locationHeader);
