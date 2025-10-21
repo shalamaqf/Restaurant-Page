@@ -4,7 +4,7 @@ function renderTitle() {
     const title = document.createElement("h1");
 
     titleContainer.className = "titleContainer";
-    title.className = "title";
+    title.id = "title";
 
     title.textContent = "Kaerimasu 帰ります";
 
@@ -19,8 +19,8 @@ function renderAbout () {
     const aboutHeader = document.createElement("h3");
     const description = document.createElement("p");
 
-    aboutContainer.className = "aboutContainer";
-    aboutHeader.className = "aboutHeader";
+    aboutContainer.className = "container about";
+    aboutHeader.className = "header about";
     description.className = "description";
 
     aboutHeader.textContent = "About"
@@ -38,8 +38,8 @@ function renderOpenTime() {
     const openTimeHeader = document.createElement("h3");
     const timeInfo = document.createElement("p");
 
-    openTimeContainer.className = "openTimeContainer";
-    openTimeHeader.className = "openTimeHeader";
+    openTimeContainer.className = "container openTime";
+    openTimeHeader.className = "header openTime";
     timeInfo.className = "timeInfo";
 
     openTimeHeader.textContent = "Open At: ";
