@@ -70,6 +70,25 @@ function renderLocation() {
     return locationContainer;
 }
 
+// Create a function to render the home page
+export function renderHomePage() {
+    const homeContainer = document.createElement("div");
+    homeContainer.className = "homeContainer";
+
+    // Call functions to render the other parts
+    const title = renderTitle();
+    const about = renderAbout();
+    const openTime = renderOpenTime();
+    const location = renderLocation();
+
+    // Append to the home page container
+    homeContainer.appendChild(title);
+    homeContainer.appendChild(about);
+    homeContainer.appendChild(openTime);
+    homeContainer.appendChild(location);
+
+    return homeContainer;    
+}
 
 
 
