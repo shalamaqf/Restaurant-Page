@@ -81,7 +81,7 @@ function renderSushiMenu() {
 }
 
 // Create a function to render DOM elements for curry menu
-export function renderCurryMenu() {
+function renderCurryMenu() {
     const curryMenuContainer = document.createElement("div");
     const curryInfoContainer = document.createElement("div");
     const curryInfo = document.createElement("p");
@@ -97,7 +97,7 @@ export function renderCurryMenu() {
     curryPict.className = "pict curry";
     curryPict.src = curry;
 
-    curryInfo.textContent = "Special Curry  . . . . . . . . . .  ¥900";
+    curryInfo.textContent = "Special Curry  . . . . . . . . . .  ¥700";
     menuDesc.textContent = "A warm bowl of curry featuring special spices, paired with steamed rice, and crispy tender meat (chicken, beef, or pork). + Signature homemade green tea — on the house."
 
     curryInfoContainer.appendChild(curryInfo);
@@ -109,6 +109,22 @@ export function renderCurryMenu() {
     curryMenuContainer.appendChild(curryPictContainer);
 
     return curryMenuContainer;
+}
+
+// Create a function to render DOM elements for menu page
+export function renderMenuPage() {
+    const menuPageContainer = document.createElement("div");
+    menuPageContainer.className = "menuContainer";
+
+    const ramenMenu = renderRamenMenu();
+    const sushiMenu = renderSushiMenu();
+    const curryMenu = renderCurryMenu();
+
+    menuPageContainer.appendChild(ramenMenu);
+    menuPageContainer.appendChild(sushiMenu);
+    menuPageContainer.appendChild(curryMenu);
+
+    return menuPageContainer;
 }
 
 
