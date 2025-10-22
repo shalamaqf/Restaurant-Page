@@ -20,3 +20,10 @@ function isExist(page) {
 
     return false;
 }
+
+// Create a function to clear content
+function clearContent() {
+    const contentPage = document.querySelector("#content");
+
+    contentPage.innerHTML = "";
+}
