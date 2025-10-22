@@ -41,7 +41,6 @@ function handleHomeButton() {
     });
 }
 
-
 // Create a function to handle menu button
 function handleMenuButton() {
     const menuButton = document.querySelector(".button.menu");
@@ -52,5 +51,18 @@ function handleMenuButton() {
         if(isExist(menuPage)) return;
         clearContent();
         appendPage(menuPage);
+    });
+}
+
+// Create a function to handle menu button
+function handleContactButton() {
+    const contactButton = document.querySelector(".button.contact");
+    const contactPage = renderContactPage();
+
+    // Attach an event listener
+    contactButton.addEventListener('click', () => {
+        if(isExist(contactPage)) return;
+        clearContent();
+        appendPage(contactPage);
     });
 }
