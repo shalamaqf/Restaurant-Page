@@ -18,28 +18,28 @@ function renderMenuHeader() {
     return menuHeaderContainer;
 }
 
-// Create a function to render DOM elements for menu ramen
-export function renderRamenMenu() {
+// Create a function to render DOM elements for ramen menu
+function renderRamenMenu() {
     const ramenMenuContainer = document.createElement("div");
     const ramenInfoContainer = document.createElement("div");
     const ramenInfo = document.createElement("p");
-    const bonusDrink = document.createElement("p");
+    const menuDesc = document.createElement("p");
     const ramenPictContainer = document.createElement("div");
     const ramenPict = document.createElement("img");
 
     ramenMenuContainer.className = "containerMenu";
     ramenInfoContainer.className = "container ramen";
     ramenInfo.className = "foodInfo ramen";
-    bonusDrink.className = "bonusDrink";
+    menuDesc.className = "menuDesc ramen";
     ramenPictContainer.className = "pict container";
     ramenPict.className = "pict ramen";
     ramenPict.src = ramen;
 
     ramenInfo.textContent = "Classic Ramen  . . . . . . . . . .  ¥500";
-    bonusDrink.textContent = "+ Signature homemade green tea — on the house.";
+    menuDesc.textContent = "Classic ramen with a soft-boiled egg, tender meat slices (chicken, beef, or pork), mushrooms, crispy nori, and other toppings that pair perfectly with the broth. + Signature homemade green tea — on the house.";
 
     ramenInfoContainer.appendChild(ramenInfo);
-    ramenInfoContainer.appendChild(bonusDrink);
+    ramenInfoContainer.appendChild(menuDesc);
 
     ramenPictContainer.appendChild(ramenPict);
 
@@ -48,4 +48,3 @@ export function renderRamenMenu() {
 
     return ramenMenuContainer;
 }
-
