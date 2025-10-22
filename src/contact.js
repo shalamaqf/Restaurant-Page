@@ -70,3 +70,20 @@ function renderCustomerServiceContact() {
     return renderCustomerServiceContact;
 }
 
+// Create a function to render the contact page
+export function renderContactPage() {
+    const contactPageContainer = document.createElement("div");
+    contactPageContainer.className = "contactPageContainer";
+
+    const contactHeader = renderContactHeader();
+    const managerContact = renderManagerContact();
+    const headChefContact = renderHeadChefContact();
+    const customerServiceContact = renderCustomerServiceContact();
+
+    contactPageContainer.appendChild(contactHeader);
+    contactPageContainer.appendChild(managerContact);
+    contactPageContainer.appendChild(headChefContact);
+    contactPageContainer.appendChild(customerServiceContact);
+
+    return contactPageContainer;
+}
