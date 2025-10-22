@@ -17,3 +17,10 @@ function appendMenuPage() {
 
     contentPage.appendChild(menuPage());
 }
+
+// Create a function to append contact page to content containers
+function appendContactPage() {
+    const contentPage = document.querySelector("#content");
+
+    contentPage.appendChild(contactPage());
+}
