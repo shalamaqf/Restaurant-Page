@@ -66,3 +66,15 @@ function handleContactButton() {
         appendPage(contactPage);
     });
 }
+
+// Create a function to run the restaurant page
+function runRestaurantPage() {
+    const homePage = renderHomePage();
+    appendPage(homePage);
+    handleHomeButton();
+    handleMenuButton();
+    handleContactButton();
+}
+
+runRestaurantPage();
+
