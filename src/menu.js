@@ -1,7 +1,7 @@
 // Import food images
 import ramen from "./ramen.jpg";
 import sushi from "./sushi.jpg";
-import curryPict from "./curry.jpg";
+import curry from "./curry.jpg";
 
 // Create a function to render DOM elements for menu as header
 function renderMenuHeader() {
@@ -79,3 +79,36 @@ function renderSushiMenu() {
 
     return sushiMenuContainer;
 }
+
+// Create a function to render DOM elements for curry menu
+export function renderCurryMenu() {
+    const curryMenuContainer = document.createElement("div");
+    const curryInfoContainer = document.createElement("div");
+    const curryInfo = document.createElement("p");
+    const menuDesc = document.createElement("p");
+    const curryPictContainer = document.createElement("div");
+    const curryPict = document.createElement("img");
+
+    curryMenuContainer.className = "containerMenu";
+    curryInfoContainer.className = "container currys";
+    curryInfo.className = "foodInfo curry";
+    menuDesc.className = "menuDesc curry";
+    curryPictContainer.className = "containerPict";
+    curryPict.className = "pict curry";
+    curryPict.src = curry;
+
+    curryInfo.textContent = "Special Curry  . . . . . . . . . .  ¥900";
+    menuDesc.textContent = "A warm bowl of curry featuring special spices, paired with steamed rice, and crispy tender meat (chicken, beef, or pork). + Signature homemade green tea — on the house."
+
+    curryInfoContainer.appendChild(curryInfo);
+    curryInfoContainer.appendChild(menuDesc);
+
+    curryPictContainer.appendChild(curryPict);
+
+    curryMenuContainer.appendChild(curryInfoContainer);
+    curryMenuContainer.appendChild(curryPictContainer);
+
+    return curryMenuContainer;
+}
+
+
