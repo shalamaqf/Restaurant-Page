@@ -116,10 +116,12 @@ export function renderMenuPage() {
     const menuPageContainer = document.createElement("div");
     menuPageContainer.className = "menuContainer";
 
+    const menuHeader = renderMenuHeader();
     const ramenMenu = renderRamenMenu();
     const sushiMenu = renderSushiMenu();
     const curryMenu = renderCurryMenu();
 
+    menuPageContainer.appendChild(menuHeader);
     menuPageContainer.appendChild(ramenMenu);
     menuPageContainer.appendChild(sushiMenu);
     menuPageContainer.appendChild(curryMenu);
