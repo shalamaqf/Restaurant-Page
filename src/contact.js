@@ -47,10 +47,19 @@ class Person {
 }
 
 // Create a function to create manager contact
-export function renderManagerContact() {
+function renderManagerContact() {
     const manager = new Person("Manager", "03-3421-7890", "kaerimasuManager@gmail.com");
     const renderManagerContact = manager.renderPersonContact();
 
     return renderManagerContact;
+}
+
+
+// Create a function to create head chef contact
+function renderHeadChefContact() {
+    const headChef = new Person("Head Chef", "03-5799-1234", "kaerimasuHeadChef@gmail.com");
+    const renderHeadChefContact = headChef.renderPersonContact();
+
+    return renderHeadChefContact;
 }
 
