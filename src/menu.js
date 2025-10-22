@@ -1,6 +1,6 @@
 // Import food images
 import ramen from "./ramen.jpg";
-import sushiPict from "./sushi.jpg";
+import sushi from "./sushi.jpg";
 import curryPict from "./curry.jpg";
 
 // Create a function to render DOM elements for menu as header
@@ -31,7 +31,7 @@ function renderRamenMenu() {
     ramenInfoContainer.className = "container ramen";
     ramenInfo.className = "foodInfo ramen";
     menuDesc.className = "menuDesc ramen";
-    ramenPictContainer.className = "pict container";
+    ramenPictContainer.className = "containerPict";
     ramenPict.className = "pict ramen";
     ramenPict.src = ramen;
 
@@ -47,4 +47,35 @@ function renderRamenMenu() {
     ramenMenuContainer.appendChild(ramenPictContainer);
 
     return ramenMenuContainer;
+}
+
+// Create a function to render DOM elements for sushi menu
+function renderSushiMenu() {
+    const sushiMenuContainer = document.createElement("div");
+    const sushiInfoContainer = document.createElement("div");
+    const sushiInfo = document.createElement("p");
+    const menuDesc = document.createElement("p");
+    const sushiPictContainer = document.createElement("div");
+    const sushiPict = document.createElement("img");
+
+    sushiMenuContainer.className = "containerMenu";
+    sushiInfoContainer.className = "container sushi";
+    sushiInfo.className = "foodInfo sushi";
+    menuDesc.className = "menuDesc sushi";
+    sushiPictContainer.className = "containerPict";
+    sushiPict.className = "pict sushi";
+    sushiPict.src = sushi;
+
+    sushiInfo.textContent = "Homestyle Sushi  . . . . . . . . . .  ¥900";
+    menuDesc.textContent = "A complete plate of homemade sushi rolls, accompanied by assorted side dishes. + Signature homemade green tea — on the house."
+
+    sushiInfoContainer.appendChild(sushiInfo);
+    sushiInfoContainer.appendChild(menuDesc);
+
+    sushiPictContainer.appendChild(sushiPict);
+
+    sushiMenuContainer.appendChild(sushiInfoContainer);
+    sushiMenuContainer.appendChild(sushiPictContainer);
+
+    return sushiMenuContainer;
 }
