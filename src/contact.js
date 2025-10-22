@@ -54,12 +54,19 @@ function renderManagerContact() {
     return renderManagerContact;
 }
 
-
 // Create a function to create head chef contact
 function renderHeadChefContact() {
     const headChef = new Person("Head Chef", "03-5799-1234", "kaerimasuHeadChef@gmail.com");
     const renderHeadChefContact = headChef.renderPersonContact();
 
     return renderHeadChefContact;
+}
+
+// Create a function to create customer service contact
+function renderCustomerServiceContact() {
+    const customerService = new Person("Customer Service", "03-3705-4567", "kaerimasuCustomerService@gmail.com");
+    const renderCustomerServiceContact = customerService.renderPersonContact();
+
+    return renderCustomerServiceContact;
 }
 
