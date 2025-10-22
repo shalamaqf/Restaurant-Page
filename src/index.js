@@ -27,3 +27,16 @@ function clearContent() {
 
     contentPage.innerHTML = "";
 }
+
+// Create a function to handle home page button
+function handleHomeButton() {
+    const homeButton = document.querySelector(".button.home");
+    const homePage = renderHomePage();
+
+    // Attach an event listener
+    homeButton.addEventListener('click', () => {
+        if(isExist(homePage)) return;
+        clearContent();
+        appendPage(homePage);
+    });
+}
