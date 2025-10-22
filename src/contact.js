@@ -12,3 +12,36 @@ function renderContactHeader() {
 
     return contactHeaderContainer;
 }
+
+// Create a class to create an object person
+class Person {
+    constructor(pos, number, email) {
+        this.pos = pos;
+        this.number = number;
+        this.email = email;
+    }
+
+    // Create a function to render contact
+    renderPersonContact() {
+    const contactContainer = document.createElement("div");
+    const contactInfo = document.createElement("h2");
+    const contactNumber = document.createElement("p");
+    const contactEmail = document.createElement("p");
+
+    contactContainer.className = "contactContainer";
+    contactInfo.className = "contactInfo";
+    contactNumber.className = "contactNumber";
+    contactEmail.className = "contactEmail";
+
+    contactInfo.textContent = this.pos;
+    contactNumber.textContent = this.number;
+    contactEmail.textContent = this.email;
+
+    contactContainer.appendChild(contactInfo);
+    contactContainer.appendChild(contactNumber);
+    contactContainer.appendChild(contactEmail);
+
+    return contactContainer; 
+    
+    }
+}
