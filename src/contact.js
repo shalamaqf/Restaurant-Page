@@ -42,6 +42,15 @@ class Person {
     contactContainer.appendChild(contactEmail);
 
     return contactContainer; 
-    
+
     }
 }
+
+// Create a function to create manager contact
+export function renderManagerContact() {
+    const manager = new Person("Manager", "03-3421-7890", "kaerimasuManager@gmail.com");
+    const renderManagerContact = manager.renderPersonContact();
+
+    return renderManagerContact;
+}
+
