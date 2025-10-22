@@ -28,7 +28,7 @@ function clearContent() {
     contentPage.innerHTML = "";
 }
 
-// Create a function to handle home page button
+// Create a function to handle home button
 function handleHomeButton() {
     const homeButton = document.querySelector(".button.home");
     const homePage = renderHomePage();
@@ -38,5 +38,19 @@ function handleHomeButton() {
         if(isExist(homePage)) return;
         clearContent();
         appendPage(homePage);
+    });
+}
+
+
+// Create a function to handle menu button
+function handleMenuButton() {
+    const menuButton = document.querySelector(".button.menu");
+    const menuPage = renderMenuPage();
+
+    // Attach an event listener
+    menuButton.addEventListener('click', () => {
+        if(isExist(menuPage)) return;
+        clearContent();
+        appendPage(menuPage);
     });
 }
