@@ -113,3 +113,32 @@ header {
 .foodInfo.curry {
     margin-bottom: 1rem;
 }
+
+
+/* LAYOUT CONTACT PAGE */
+.contactPageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.contactHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    margin-bottom: 3rem;
+}
+
+.contactInfo {
+    margin-bottom: 0.5rem;
+}
