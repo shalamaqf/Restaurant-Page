@@ -60,3 +60,56 @@ header {
     justify-content: center;
     align-items: start;
 }
+
+
+/* LAYOUT MENU PAGE */
+.menuContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.menuHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.containerMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    max-width: 700px;
+    gap: 5rem;
+}
+
+.containerPict {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pict {
+    max-width: 15rem;
+}
+
+.container.ramen,
+.container.sushi,
+.container.curry {
+    flex-wrap: wrap;
+    align-self: start;
+}
+
+.containerMenu {
+    margin-bottom: 5rem;
+}
+
+.foodInfo.ramen,
+.foodInfo.sushi,
+.foodInfo.curry {
+    margin-bottom: 1rem;
+}

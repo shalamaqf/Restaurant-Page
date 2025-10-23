@@ -90,7 +90,7 @@ function renderCurryMenu() {
     const curryPict = document.createElement("img");
 
     curryMenuContainer.className = "containerMenu";
-    curryInfoContainer.className = "container currys";
+    curryInfoContainer.className = "container curry";
     curryInfo.className = "foodInfo curry";
     menuDesc.className = "menuDesc curry";
     curryPictContainer.className = "containerPict";
