@@ -159,10 +159,13 @@ nav {
 .contactContainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: start;
 
+    width: 100%;
+    min-height: 15rem;
     margin-bottom: 3rem;
+    padding: 2rem;
 }
 
 .contactInfo {
@@ -251,4 +254,28 @@ header {
 
 .menuDesc {
     font-size: 1.1rem;
+}
+
+
+/* STYLE CONTACT PAGE */
+.container.contactHeader {
+    border: none;
+}
+
+#contactHeader {
+    font-size: 4rem;
+    border-bottom: 4px solid black;
+}
+
+.contactContainer {
+    border: 2px solid black;
+}
+
+.contactInfo {
+    font-size: 2rem;
+}
+
+.contactNumber,
+.contactEmail {
+    font-size: 1.4rem;
 }

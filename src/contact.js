@@ -6,7 +6,7 @@ function renderContactHeader() {
     contactHeaderContainer.className = "container contactHeader";
     contactHeader.id = "contactHeader";
 
-    contactHeader.textContent = "Contact Us";
+    contactHeader.textContent = "CONTACT US";
 
     contactHeaderContainer.appendChild(contactHeader);
 
@@ -48,7 +48,7 @@ class Person {
 
 // Create a function to create manager contact
 function renderManagerContact() {
-    const manager = new Person("Manager", "03-3421-7890", "kaerimasuManager@gmail.com");
+    const manager = new Person("MANAGER", "03-3421-7890", "kaerimasuManager@gmail.com");
     const renderManagerContact = manager.renderPersonContact();
 
     return renderManagerContact;
@@ -56,7 +56,7 @@ function renderManagerContact() {
 
 // Create a function to create head chef contact
 function renderHeadChefContact() {
-    const headChef = new Person("Head Chef", "03-5799-1234", "kaerimasuHeadChef@gmail.com");
+    const headChef = new Person("HEAD CHEF", "03-5799-1234", "kaerimasuHeadChef@gmail.com");
     const renderHeadChefContact = headChef.renderPersonContact();
 
     return renderHeadChefContact;
@@ -64,7 +64,7 @@ function renderHeadChefContact() {
 
 // Create a function to create customer service contact
 function renderCustomerServiceContact() {
-    const customerService = new Person("Customer Service", "03-3705-4567", "kaerimasuCustomerService@gmail.com");
+    const customerService = new Person("CUSTOMER SERVICE", "03-3705-4567", "kaerimasuCustomerService@gmail.com");
     const renderCustomerServiceContact = customerService.renderPersonContact();
 
     return renderCustomerServiceContact;
