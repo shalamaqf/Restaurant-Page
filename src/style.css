@@ -24,3 +24,9 @@ header {
     justify-content: start;
     align-items: center;
 }
+
+#content {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
