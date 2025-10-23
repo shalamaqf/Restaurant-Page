@@ -6,7 +6,7 @@ function renderTitle() {
     titleContainer.className = "titleContainer";
     title.id = "title";
 
-    title.textContent = "Kaerimasu 帰ります";
+    title.textContent = "KAERIMASU 帰ります";
 
     titleContainer.appendChild(title);
 
@@ -23,7 +23,7 @@ function renderAbout () {
     aboutHeader.className = "header about";
     description.className = "description";
 
-    aboutHeader.textContent = "About"
+    aboutHeader.textContent = "ABOUT"
     description.textContent = "A restaurant that offers home-style cooking in a warm, relaxed setting — creating the comforting feeling of coming home."
 
     aboutContainer.appendChild(aboutHeader);
@@ -42,7 +42,7 @@ function renderOpenTime() {
     openTimeHeader.className = "header openTime";
     timeInfo.className = "timeInfo";
 
-    openTimeHeader.textContent = "Open At";
+    openTimeHeader.textContent = "OPEN AT";
     timeInfo.textContent = "Tuesday - Sunday: 10AM - 10PM";
 
     openTimeContainer.appendChild(openTimeHeader);
@@ -58,10 +58,10 @@ function renderLocation() {
     const location = document.createElement("p");
 
     locationContainer.className = "container location";
-    locationHeader.className = "header location";
+    locationHeader.className = "header loc";
     location.className = "location";
 
-    locationHeader.textContent = "Location";
+    locationHeader.textContent = "LOCATION";
     location.textContent = "5 Chome-17-3 Shimokitazawa, Setagaya City, Tokyo 155-0031, Japan";
 
     locationContainer.appendChild(locationHeader);
