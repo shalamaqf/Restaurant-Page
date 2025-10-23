@@ -37,3 +37,26 @@ header {
     width: 100%;
     max-width: 1200px;
 }
+
+
+/* LAYOUT HOME PAGE */
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
