@@ -67,6 +67,9 @@ header {
     margin-bottom: 2rem;
 }
 
+.description {
+    flex-wrap: wrap;
+}
 
 /* LAYOUT MENU PAGE */
 .menuContainer {
