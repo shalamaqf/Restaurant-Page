@@ -22,7 +22,7 @@ function renderMenuHeader() {
 function renderRamenMenu() {
     const ramenMenuContainer = document.createElement("div");
     const ramenInfoContainer = document.createElement("div");
-    const ramenInfo = document.createElement("p");
+    const ramenInfo = document.createElement("h3");
     const menuDesc = document.createElement("p");
     const ramenPictContainer = document.createElement("div");
     const ramenPict = document.createElement("img");
@@ -53,7 +53,7 @@ function renderRamenMenu() {
 function renderSushiMenu() {
     const sushiMenuContainer = document.createElement("div");
     const sushiInfoContainer = document.createElement("div");
-    const sushiInfo = document.createElement("p");
+    const sushiInfo = document.createElement("h3");
     const menuDesc = document.createElement("p");
     const sushiPictContainer = document.createElement("div");
     const sushiPict = document.createElement("img");
@@ -84,7 +84,7 @@ function renderSushiMenu() {
 function renderCurryMenu() {
     const curryMenuContainer = document.createElement("div");
     const curryInfoContainer = document.createElement("div");
-    const curryInfo = document.createElement("p");
+    const curryInfo = document.createElement("h3");
     const menuDesc = document.createElement("p");
     const curryPictContainer = document.createElement("div");
     const curryPict = document.createElement("img");
