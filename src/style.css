@@ -26,7 +26,7 @@ header {
 
     width: 100%;
     max-width: 100%;
-    min-height: 3rem;
+    min-height: 7rem;
     margin-bottom: 1rem;
 }
 
@@ -168,4 +168,23 @@ body {
     background-position: center;
 
     font-family: 'Shippori Mincho', sans-serif;
+}
+
+header {
+    background-color: black;
+}
+
+.button {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 30px;
+    padding: 0.4rem 2rem;
+    padding-bottom: 0.6rem;
+    cursor: pointer;
+
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Shippori Mincho', sans-serif;
+    font-weight: bold;
 }
