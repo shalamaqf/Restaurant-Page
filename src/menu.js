@@ -11,7 +11,7 @@ function renderMenuHeader() {
     menuHeaderContainer.className = "container menuHeader";
     menuHeader.id = "menu"
 
-    menuHeader.textContent = "Menu";
+    menuHeader.textContent = "MENU";
 
     menuHeaderContainer.appendChild(menuHeader);
 
@@ -35,7 +35,7 @@ function renderRamenMenu() {
     ramenPict.className = "pict ramen";
     ramenPict.src = ramen;
 
-    ramenInfo.textContent = "Classic Ramen  . . . . . . . . . .  ¥500";
+    ramenInfo.textContent = "Classic Ramen ¥500";
     menuDesc.textContent = "Classic ramen with a soft-boiled egg, tender meat slices (chicken, beef, or pork), mushrooms, crispy nori, and other toppings that pair perfectly with the broth. + Signature homemade green tea — on the house.";
 
     ramenInfoContainer.appendChild(ramenInfo);
@@ -66,7 +66,7 @@ function renderSushiMenu() {
     sushiPict.className = "pict sushi";
     sushiPict.src = sushi;
 
-    sushiInfo.textContent = "Homestyle Sushi  . . . . . . . . . .  ¥900";
+    sushiInfo.textContent = "Homestyle Sushi ¥900";
     menuDesc.textContent = "A complete plate of homemade sushi rolls, accompanied by assorted side dishes. + Signature homemade green tea — on the house."
 
     sushiInfoContainer.appendChild(sushiInfo);
@@ -97,7 +97,7 @@ function renderCurryMenu() {
     curryPict.className = "pict curry";
     curryPict.src = curry;
 
-    curryInfo.textContent = "Special Curry  . . . . . . . . . .  ¥700";
+    curryInfo.textContent = "Special Curry ¥700";
     menuDesc.textContent = "A warm bowl of curry featuring special spices, paired with steamed rice, and crispy tender meat (chicken, beef, or pork). + Signature homemade green tea — on the house."
 
     curryInfoContainer.appendChild(curryInfo);

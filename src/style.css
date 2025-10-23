@@ -106,13 +106,15 @@ nav {
 
     width: 100%;
     max-width: 700px;
-    gap: 5rem;
+    padding: 1rem;
+    gap: 2rem;
 }
 
 .containerPict {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-right: 2rem;
 }
 
 .pict {
@@ -128,6 +130,7 @@ nav {
 
 .containerMenu {
     margin-bottom: 5rem;
+    min-height: 20rem;
 }
 
 .foodInfo.ramen,
@@ -218,4 +221,33 @@ header {
 
 .container {
     border: 2px solid black;
+}
+
+
+/* STYLE MENU PAGE */
+.container.menuHeader {
+    border: none;
+}
+
+#menu {
+    font-size: 4rem;
+    border-bottom: 4px solid black;
+}
+
+.container.ramen,
+.container.sushi,
+.container.curry {
+    border: none;
+}
+
+.containerMenu {
+    border: 2px solid black;
+}
+
+.foodInfo {
+    font-size: 1.5rem;
+}
+
+.menuDesc {
+    font-size: 1.1rem;
 }
