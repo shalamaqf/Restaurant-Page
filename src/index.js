@@ -1,3 +1,6 @@
+// Import css
+import "./style.css";
+
 // Import modules 
 import { renderHomePage } from "./home";
 import { renderMenuPage } from "./menu";
