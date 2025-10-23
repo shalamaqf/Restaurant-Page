@@ -27,7 +27,6 @@ header {
     width: 100%;
     max-width: 100%;
     min-height: 7rem;
-    margin-bottom: 1rem;
 }
 
 nav {
@@ -40,11 +39,12 @@ nav {
 #content {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 
     width: 100%;
     max-width: 1200px;
     padding: 0 1rem;
+    flex-grow: 1;
 }
 
 
@@ -168,6 +168,10 @@ body {
     background-position: center;
 
     font-family: 'Shippori Mincho', sans-serif;
+}
+
+#content {
+    background-color: rgba(255, 255, 255, 1);
 }
 
 header {
